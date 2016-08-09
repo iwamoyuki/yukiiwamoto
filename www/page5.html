@@ -1,0 +1,78 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="Content-Security-Policy" content="default-src *; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
+    <link rel="stylesheet" href="components/loader.css">
+    <style type="text/css">
+   body {
+    background-color: #91DBDB;
+}
+    img.recoreco{
+	width: 400px;
+	height:80px;
+    position: absolute;
+    top: 150px;
+    left: 0px;
+   
+}
+	.right1 {
+     text-align: right;
+     margin: 5px 5px 5px 5px;
+}
+    .right2 {
+     text-align: right;
+     margin: 5px 60px 5px 5px;
+}
+	.plusbtn{
+    font-size: 20px;
+    width: 30px;
+    height: 30px;
+    background-color: #FFFFFF;
+	border: 1px solid #000;
+    border-radius: 20px;
+    position: absolute;
+    top: 570px;
+    left: 330px;
+}
+	.mvbtn{
+	margin: 10px 10px 10px 10px;
+	width: 100px;
+    height: 60px;
+	background-color: #FFFFFF;
+	border: 0px;
+    border-radius: 10px;
+}
+</style>
+
+<script type="text/javascript">
+	if(ticket=0){
+	document.write("0");
+	else
+	{
+	document.write("+ticket+");
+</script>
+
+    <script src="components/loader.js"></script>
+    <script>
+        //
+        // TODO: Write JavaScript code here
+        //
+    </script>
+</head>
+<body bgcolor="#91DBDB">
+    <a href="page1.html#login.html"><p class="right1">ログアウト</p></a>
+    <img src="recoreco.jpg" alt="写真" class="recoreco">
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <p>
+    <input class="mvbtn" type=button value="記録" onclick="alert('記録画面へ移動します')">
+    <input class="mvbtn" type=button value="履歴" onclick="alert('履歴画面へ移動します')">
+    <input class="mvbtn" type=button value="設定" onclick="alert('設定画面へ移動します')">
+    </p>
+    <br><br><br>
+    <p class="right2">チケット:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;枚
+    <input class="plusbtn" type="button" value="+" onclick="alert('チケット購入画面へ移動します')">
+    </p>
+   </body>
+</html>

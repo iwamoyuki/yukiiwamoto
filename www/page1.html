@@ -1,0 +1,75 @@
+<ons-page>
+  <ons-tabbar position="top">
+    <ons-tabbar-item page="str.html" icon="rotate-left"></ons-tabbar-item>
+    <ons-tabbar-item page="new.html" label="新規登録" active="true"></ons-tabbar-item>
+    <ons-tabbar-item page="login.html" label="ログイン"></ons-tabbar-item>
+  </ons-tabbar>
+  
+  <ons-template id="str.html">
+   <section  style="padding-top: 100px; color: #999; text-align: center">
+   <h1>RecoReco</h1>
+   <br><br>
+   <ons-icon icon="spinner " size="100px " spin="true"  rotate="90"></ons-icon>
+   <br><br>
+    Now Loading ...
+ </section>
+  </ons-template>
+  
+  <ons-template id="new.html">
+  <p style="padding-top: 100px; color: #999; text-align: center">
+     <section style="padding: 10px 10px">
+     　　　   ユーザID ：
+      <input type="text" class="text-input" ng-model="text" placeholder="Type here" style="width: 50%">
+     </section>
+     
+    <section style="padding: 10px 10px">
+      　　 パスワード ：
+      <input type="text" class="text-input" ng-model="text" placeholder="Type here" style="width: 50%">
+    </section>
+
+    <section style="padding: 10px 10px">
+      パスワード(確認)：
+      <input type="text" class="text-input" ng-model="text" placeholder="Type here" style="width: 50%">
+    </section>
+    
+    <section style="padding: 10px 10px">
+      　　 　ユーザ名 ：
+      <input type="text" class="text-input" ng-model="text" placeholder="Type here" style="width: 50%">
+    </section>
+    
+    <section style="padding:  10px 10px" align="center">
+      <ons-icon icon="ion-ios-help"  size="50px"></ons-icon>
+      <label for="file_photo">
+       ＋写真を選択
+       <input type="file" id="file_photo" style="display:none;">
+      </label>
+    </section>
+    
+    <section style="padding:  10px 10px" >
+      <ons-button modifier="large" >次へ</ons-button>
+    </section>
+      
+　</p>
+ 
+  <ons-template id="login.html">
+   <p style="padding-top: 100px; color: #999; text-align: center">
+     <section style="padding: 10px 10px">
+     　　　   ユーザID ：
+      <input type="text" class="text-input" ng-model="text" placeholder="Type here" style="width: 50%">
+     </section>
+     
+    <section style="padding: 10px 10px">
+      　　 パスワード ：
+      <input type="text" class="text-input" ng-model="text" placeholder="Type here" style="width: 50%">
+    </section>
+    
+    <section style="padding:  150px 10px" >
+      <ons-button modifier="large" onclick=myNavigator.pushPage('page3.html')>ログイン</ons-button>
+    </section>
+    
+   </p>    
+   
+  </ons-template>
+ </ons-template>
+</ons-page>
+

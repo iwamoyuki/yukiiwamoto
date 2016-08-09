@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="Content-Security-Policy" content="default-src * data:; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
+    <script src="components/loader.js"></script>
+    <link rel="stylesheet" href="components/loader.css">
+    <link rel="stylesheet" href="css/style.css">
+    
+     <!-- JavaScript SDKの読み込みを設定 -->
+    <script src="js/ncmb.min.js"></script>
+    <script>
+    ons.bootstrap();
+    ons.disableAutoStatusBarFill();
+    </script>
+     <!-- 必要なライブラリ群の読み込み  -->
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="https://skyway.io/dist/msgpack.codec.js"></script>
+    <script src="https://skyway.io/dist/libspeexdsp.js"></script>
+    <script src="https://skyway.io/dist/resampler.min.js"></script>
+    <script src="https://skyway.io/dist/speechrec.min.js"></script>
+    <!-- JavaScriptの読み込みを設定 -->
+    <script src="app.js"></script>
+    
+</head>
+<body>
+ <ons-navigator title="Navigator" var="myNavigator" page="start.html">
+</body>
+</html>
